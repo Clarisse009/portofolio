@@ -1,0 +1,468 @@
+#Competences {
+    background-color: transparent;
+}
+
+
+.skills-titre h2 {
+    color: #002D56;
+    font-size: 24px;
+    text-align: center;
+    font-family: Roboto;
+   
+    letter-spacing: 0.25px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.skill-container {
+    margin: 12px 12px;
+    display: flex;
+    padding: 24px 24px;
+    background: white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    align-items: center;
+    border-radius: 20%;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    
+}
+
+.skill-name {
+    font-size: 20px;
+    margin-top: 8px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: 0.15px;
+}
+
+.skill-container img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-score {
+    color: #444;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.44px;
+}
+
+#Autres,
+#Outils{
+    margin-top:40px ;
+}
+
+@media (max-width: 767px) {
+   
+    
+    .skills-titre h2 {
+        font-size: 20px;
+        font-family: Roboto;
+        line-height: auto;
+        margin-bottom: 32px;
+        letter-spacing: 0;
+    }
+    .skill-container {
+        margin: 8px 8px;
+        padding: 10px 10px;
+        min-width: 72px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .skill-name {
+        font-size: 14px;
+        margin-top: 4px;
+        font-family: Roboto;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+
+    .skill-container img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .skill-score {
+        font-size: 12px;
+        font-family: Roboto;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+    }
+}
+
+
+
+
+/*******************SECTION PROJETS********************************/
+
+.projet-container {
+    display: flex;
+    justify-content: center; 
+    overflow: hidden; 
+}
+#projet-container {
+    min-width: 500px;   
+}
+
+.projet-box {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    padding: 20px 0; 
+    height: 500px;
+}
+
+.project {
+    flex: 0 0 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px; 
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.project img {
+    width: 200px; 
+    height: 200px; 
+    max-width: 300px; 
+}
+.project h3, .project p {
+    width: 100%;
+}
+.project a {
+    text-align: center;
+    position: relative;
+    color: #007BFF; 
+    text-decoration: none;
+    padding: 5px ;
+    border: 1px solid #007BFF;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    top: 30px;
+}
+
+.project a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .projet-container {
+        position: relative;
+    }
+
+    .projet-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    .projet-box .project {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .projet-box .project:not(:first-child) {
+        display: none;
+    }
+    .project img {
+        width: 200px; 
+        height: 200px; 
+        max-width: 300px; 
+    }
+
+    #precedent, #suivant {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #precedent { left: 18px; }
+    #suivant { right: 18px; }
+    .pagination {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pagination .dot {
+        margin: 0 5px;
+    }
+}
+
+
+
+
+/* Additional hover effects for desktop viewers */
+.project:hover {
+    transform: scale(1.03); /* Slightly enlarge projects on hover */
+}
+
+
+
+/**********************Les fèches********************************/
+#precedent, #suivant {
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    z-index: 10; 
+    border: none;
+    cursor: pointer;
+    margin-top: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); 
+}
+
+#precedent { left: 195px; }
+#suivant { right: 195px; }
+
+#precedent:hover{
+    background-color: rgb(175, 54, 145);
+}
+#suivant:hover {
+    background-color: rgb(175, 54, 145);
+}
+
+.pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    bottom: 34%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: rgb(110, 87, 224);
+}
+
+
+
+
+
+/* ----------------------- ABOUT INFO --------------------------------------------- */
+.section{
+    padding-block: 5em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 50px;
+}
+
+.col{
+    display: flex;
+    width: 50%;
+    margin-right: 100px;
+    
+}
+.about-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    max-width: 800px;
+}
+.about-info p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
+.about-btn button{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 30px;
+}
+.about-btn button:hover{
+    background: var(--first-color-hover);
+}
+.controls{
+    width: 350px;
+    height: 400px;
+}
+.about-photo{
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .image, .image img{
+        width: 200px;
+        height: 200px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100%;
+    }
+    .about-photo img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #precedent, #suivant {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .pagination {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #precedent {
+        left: 0;
+        right: 10px;
+    }
+
+    #suivant {
+        right: 0;
+        
+    }
+
+}
+
+
+.scroll-up {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+.scroll-up:hover {
+    background-color: rgb(175, 54, 145);
+}
+
+
+
+ /* Style pour l'icône de fermeture */
+.nav-menu-ferme {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none; 
+ }
+
+
+
+
+.nav-menu-ferme{
+    display: none;
+}
+.nav-menu-ferme i{
+    font-size: 28px;
+    cursor: pointer;
+}
+.active-link{
+    position: relative;
+    color: var(--first-color);
+    transition: .3;
+}
+.active-link::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: var(--first-color);
+    border-radius: 50%;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- ---------mes CSS ---------- -->
+    <link rel="stylesheet" href="mon'portfolio.css">
+    <link rel="stylesheet" href="mon'portfoloi2.css">
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mon-Portfolio</title>
+
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Clarisse</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Acceuil</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">A Propos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#Competence" class="nav-link">Competences</a>
+                    <div class="circle"></div>
+                </li>
+              
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#Service" class="nav-link">Services</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">vlogs</a>
+                    <div class="circle"></div>
+                </li<>
+            </ul>
+        </div>
+       
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+        <div class="nav-menu-ferme">
+            <i class="uil uil-times"></i>
+        </div>
+      </nav>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Eli AMOU</span>
+            </div>
+            <div class="featured-name">
+                <p>Je suis <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Actuellement en première année de développement web et mobile, je suis activement à la recherche d’un stage.
+                    Mon atout ? Je m’adapte rapidement à de nouveaux environnements
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Contact</button>
+                <button class="btn">Mon CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"> <i class='bx bxl-gmail'></i></div>
+                <a href="https://github.com/clarisse008?tab=repositories">
+                    <div class="icon">
+                        <i class="uil uil-github-alt"></i>
+                    </div>
+                </a>
+                
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="clara.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class='bx bx-down-arrow-alt' ></i>  
+            </a>
+          </div>
+       </section>
+
+
+       <!-- -------------- Apropo ---------------- -->
+       <section class="section" id="about">
+        <div class="top-header">
+          <h1>A Propos de Moi</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="about-photo">
+                    <video controls width="400" height="350">
+                        <source src="ma_video.mp4" type="video/mp4">
+                        <!-- Message de secours si la vidéo ne peut pas être lue -->
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </div>
+            </div>    
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>En tant qu’étudiante en première année de développement web et mobile, 
+                        je suis déjà dotée de compétences solides acquises grâce à ma licence en économie internationale et à mon intérêt personnel pour la technologie.
+                         Ma passion pour ce domaine ne cesse de croître à mesure que je découvre son potentiel illimité.
+                          Chaque projet est une plateforme d’apprentissage pour moi, 
+                         me permettant d’élargir mes compétences et de me perfectionner.
+                          Malgré ma position de débutante dans ce domaine, je suis capable de fournir des solutions numériques innovantes et de haute qualité.
+                         Je suis constamment à la recherche de nouvelles opportunités pour évoluer et m’adapter dans ce domaine en rapide évolution
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    
+    
+
+        
+    <section class="section" id="Competence">
+        <div class="top-header"> <h1>Competence</h1> </div>
+       
+        <div class="skills-box" id="Programation">
+            <div class="skills-titre" class="titre-1"> <h2>Langage de Programation </h2> </div>
+                <div class="skills">
+                    <div class="skill-container">
+                        <img src="javascript.png" alt="Logo SQL">
+                        <div class="skill-name">javascript</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="php.png" alt="Logo SQL">
+                        <div class="skill-name">PNP</div>
+                    <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="html.jpg" alt="Logo SQL">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="css.png" alt="Logo SQL">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="sql.jpg" alt="Logo SQL">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="skills-box" id="Autres">
+            <div class="skills-titre" class="titre-2"><h2>Autres Langages</h2></div>
+                <div class="skills">
+                    <div class="skill-container">
+                        <img src="javascript.png" alt="Logo SQL">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="c.png" alt="Logo SQL">
+                        <div class="skill-name">C</div>
+                    <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="stata.png" alt="Logo SQL">
+                        <div class="skill-name">Stata</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="css.png" alt="Logo SQL">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="sql.jpg" alt="Logo SQL">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="skills-box" id="Outils">
+            <div class="skills-titre" class="titre-3" ><h2>Outils de travail</h2></div>
+                <div class="skills">
+                    <div class="skill-container">
+                        <img src="javascript.png" alt="Logo SQL">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="c.png" alt="Logo SQL">
+                        <div class="skill-name">C</div>
+                    <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="stata.png" alt="Logo SQL">
+                        <div class="skill-name">Stata</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="css.png" alt="Logo SQL">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                    <div class="skill-container">
+                        <img src="sql.jpg" alt="Logo SQL">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-score">4.8 ★</div>
+                    </div>
+                </div>
+        </div>   
+    </section>
+
+    <!--------------------------section projets--------------------------------->
+
+    <section class="section" id="projects">
+        <div class="top-header">
+            <h1>Projects</h1>
+        </div>
+        <div class="projet-container">
+            <div class="projet-box">
+                <div class="project">
+                    <img src="e-commerce.jpg" alt="Image 1">
+                    <p class="heading-p">projet en cours</p>
+                    <h3>Project 1</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#">Github</a>
+                </div>
+                <div class="project">
+                    <img src="scrabble.jpg" alt="Image 1">
+                    <p class="heading-p">projet en cours</p>
+                    <h3>Project 1</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#">Github</a>
+                </div>
+                <div class="project">
+                    <img src="site-web.png" alt="Image 1">
+                    <p class="heading-p">projet en cours</p>
+                    <h3>Project 1</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#https://github.com/clarisse008/porfolio/delete/main/site.js">Github</a>
+                </div>
+                <div class="project">
+                    <img src="stata.png" alt="Image 1">
+                    <p class="heading-p">projet en cours</p>
+                    <h3>Project 1</h3>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#">Github</a>
+                </div>
+
+            </div>
+        </div>
+        
+          <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div> <!-- Utilisez &lt; pour < -->
+          <div id="suivant" onclick="ChangeSlide(1)">&gt;</div> <!-- Utilisez &gt; pour > -->
+          <div class="pagination">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+       </div>
+    </section>
+
+ <!-- --------------section sercives ---------------- -->
+       <section class="section" id="Service">
+          <div class="top-header">
+              <h1>Services</h1>
+          </div>
+          <div class="service-container">
+            <div class="service-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>En cours</h3>
+                <label>1 Projet</label>
+            </div>
+            <div class="service-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clients</h3>
+                <label>1 Clients</label>
+            </div>
+            <div class="service-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>Débutante</label>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- Section CONTACT ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Mes coordonnées</h1>
+            <span> Contactez-moi ici. Peut-être que votre futur alternant est juste ici</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Contact Moi <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: eli.amou@edu.ece.fr</p>
+                    <p><i class="uil uil-envelope"></i> Email: eliclarissea@gmail.com</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Envoyer <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+          
+         
+    </section>
+    </main>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Eli AMOU</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Acceuil</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">A Propos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+           
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon"><i class='bx bxl-gmail'></i></i></div>
+            <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Eli Carisse AMOU</a> - All rights reserved</p>
+        </div>
+    </footer>
+    </div>
+
+    <div class="scroll-up" onclick="topFunction()"> 
+        <i class='bx bx-up-arrow-alt'></i> 
+    </div>
+    
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="mon-portfolio.js"></script>
+</body>
+</html>
